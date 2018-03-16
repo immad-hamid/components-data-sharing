@@ -1,0 +1,12 @@
+<h1>Using Input to communicate from parent to child...</h1>
+
+<h3>Father Says To Child One</h3>
+<input type="text" [(ngModel)]="message">
+
+<app-child [message]="message"></app-child>
+
+
+<h1>Using Output to communicate from child to parent...</h1>
+<h3>Father listens to Child Two</h3>
+<p>Message: {{ word }}</p>
+<app-child-two (wordEvent)="receiveMessage($event)"></app-child-two>

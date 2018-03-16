@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  check: string = 'Hello';
+  title: string;
+
+  checkVal() {
+    this.title = this.check;
+  }
 }
+// https://www.youtube.com/watch?v=I317BhehZKM
